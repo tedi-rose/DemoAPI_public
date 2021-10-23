@@ -4,7 +4,15 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
 trigger:
-- main
+  branches:
+    include:
+    - main
+    - develop
+  paths:
+    include:
+    - docs/*
+    exclude:
+    - README.md
 
 pool: MyPool
 
