@@ -13,6 +13,7 @@ namespace DemoAPI.WebApi.Controllers
 		[HttpGet]
 		public IEnumerable<string> Get()
 		{
+			// returns demo values
 			return new string[] { "val-1", "val-2" };
 		}
 	}
